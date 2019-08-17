@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head><center><h1>This is a G</h1></center>
+	<title>G</title>
+</head>
+<body>
+	<button><a href="index.html"><b>Go back</b></a></button>
+<script src = "libary/p5.min.js"></script>
+<script src = "libary/p5.sound.min.js"></script>
+<script type="text/javascript">
+	let soundlol;
+	let type;
+	let amptute;
+	let frequency;
+	type = 'sine';
+	amptute = 0.5;
+	frequency = 1960;
+
+	soundlol = new p5.Oscillator();
+		soundlol.start();
+		soundlol.setType('type');
+		
+		soundlol.amp(amptute);
+		soundlol.freq(frequency);	
+	
+
+	function setup(){
+		createCanvas(1280,300);
+	}
+	function draw(){
+	background(0);
+	fill(255);
+	circle(426,150,amptute*100);
+	circle(852,150,frequency/10);	
+	}
+
+
+</script>
+</body>
+</html>
